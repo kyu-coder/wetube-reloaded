@@ -1,0 +1,16 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "The best way to watch videos.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyu-coder/wetube-reloaded.git"
+  },
+  "author": "Kyu Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyu-coder/wetube-reloaded/issues"
+  },
+  "homepage": "https://github.com/kyu-coder/wetube-reloaded#readme"
+}
