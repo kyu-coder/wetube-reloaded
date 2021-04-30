@@ -2,3 +2,8 @@ extends base.pug
 
 block content
     h2 Welcome home here you will see the trending videos
+    ul
+        each video in videos 
+            li #{video}
+        else    // this isn't javascript - it's just pug
+            li Sorry nothing found 😅
