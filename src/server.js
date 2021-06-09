@@ -15,12 +15,14 @@ app.set("views", process.cwd() + "/src/views")
 app.use(logger);
 app.use(express.urlencoded({ extended: true }));
 
+console.log(process.env.COOKIE_SECRET);
+
 app.use(
     session({
-        secret: "Hello!",
-        resave: true,
-        saveUninitialized: true,
-        store: MongoStore.create({mongoUrl:"mongodb://127.0.0.1:27017/wetube"}),
+        secret: process.env.COOKIE_SECRET,
+        resave: false,
+        saveUninitialized: false,
+        store: MongoStore.create({mongoUrl:process.env.DB_URL}),
     })
 );
 
